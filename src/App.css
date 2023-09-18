@@ -1,38 +1,89 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: Cinzel;
+  src: url(./Cinzel-Regular.ttf);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: Montserrat;
+  src: url(./Montserrat-VariableFont_wght.ttf);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+p, h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #141a36;
+  padding: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #5267ca;
+}
+.nav_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.n_logo{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-right: 15px;
+  border-right: 1px solid #5267ca;
+}
+.m_logo{
+  width: 40px;
+}
+.nav{
+  padding: 0px 10px;
+}
+.nav a{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 5px;
+}
+.connect_wl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #5267ca;
+  padding: 5px 12px;
+}
+.connect_wl svg{
+  width: 28px;
+  fill: #5267ca;
+}
+footer{
+  background-color: #141a36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.join_lnk{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.join_lnk a img{
+  width: 20px;
+}
+.info{
+  padding: 0 20px;
 }
